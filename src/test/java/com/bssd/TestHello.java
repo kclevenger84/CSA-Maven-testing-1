@@ -1,6 +1,7 @@
 package com.bssd;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+//import static org.junit.Assert.*;
 
 //import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -22,7 +23,8 @@ public class TestHello {
      Hello.main(null);
 
      // assertion
-     assertEquals("Hello world!\n", bos.toString());
+     assertEquals("Hello world!", bos.toString().trim());
+     //assertEquals("Hello world!", Hello.testReturn());
 
      // undo the binding in System
      System.setOut(originalOut);
